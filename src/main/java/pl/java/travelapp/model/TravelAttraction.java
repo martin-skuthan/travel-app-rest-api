@@ -2,24 +2,26 @@ package pl.java.travelapp.model;
 
 import pl.java.travelapp.model.enums.AttractionType;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class TravelAttraction {
+
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_travel_attraction")
     private Long id;
     private String name;
     private String description;
-    private String location;
+    @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
+    @JoinColumn(name = "location_id")
+    private Location location;
     private AttractionType type;
     private double stars;
 
     public TravelAttraction(){}
 
-    public TravelAttraction(Long id, String name, String description, String location, AttractionType type, double stars) {
+    public TravelAttraction(Long id, String name, String description, Location location, AttractionType type, double stars) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -52,11 +54,11 @@ public class TravelAttraction {
         this.description = description;
     }
 
-    public String getLocation() {
+    public Location getLocation() {
         return location;
     }
 
-    public void setLocation(String location) {
+    public void setLocation(Location location) {
         this.location = location;
     }
 

@@ -2,13 +2,9 @@ package pl.java.travelapp.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pl.java.travelapp.model.Location;
 import pl.java.travelapp.model.TravelAttraction;
-import pl.java.travelapp.model.enums.AttractionType;
 import pl.java.travelapp.services.TravelAttractionService;
 
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 

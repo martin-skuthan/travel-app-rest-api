@@ -1,0 +1,40 @@
+2020-12-29 19:31:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "TABLE_NAME" nie istnieje
+Table "TABLE_NAME" not found; SQL statement:
+INSERT INTO table_name (DESCRIPTION , NAME , STARS , TYPE,)
+VALUES ('Zabytkowy zamek w Bedzinie', 'Zamek w Będzinie', 5, 'Castle') [42102-200]
+2020-12-29 19:31:37 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "INSERT INTO TRAVEL_ATTRACTION  (DESCRIPTION , NAME , STARS , TYPE,)[*]
+VALUES ('Zabytkowy zamek w Bedzinie', 'Zamek w Będzinie', 5, 'Castle')"; oczekiwano "identifier"
+Syntax error in SQL statement "INSERT INTO TRAVEL_ATTRACTION  (DESCRIPTION , NAME , STARS , TYPE,)[*]
+VALUES ('Zabytkowy zamek w Bedzinie', 'Zamek w Będzinie', 5, 'Castle')"; expected "identifier"; SQL statement:
+INSERT INTO TRAVEL_ATTRACTION  (DESCRIPTION , NAME , STARS , TYPE,)
+VALUES ('Zabytkowy zamek w Bedzinie', 'Zamek w Będzinie', 5, 'Castle') [42001-200]
+2020-12-29 21:05:35 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "INFORMATION_SCHEMA[*].CONSTRAINTS"; oczekiwano "INSERT"
+Syntax error in SQL statement "INFORMATION_SCHEMA[*].CONSTRAINTS"; expected "INSERT"; SQL statement:
+INFORMATION_SCHEMA.CONSTRAINTS [42001-200]
+2020-12-29 21:18:10 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "SELECT * FROM LOCATION DELETE FROM[*] LOCATION WHERE ID_LOCATION =5"
+Syntax error in SQL statement "SELECT * FROM LOCATION DELETE FROM[*] LOCATION WHERE ID_LOCATION =5"; SQL statement:
+SELECT * FROM LOCATION DELETE FROM location WHERE id_location =5 [42000-200]
+2020-12-29 21:18:17 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "SELECT * FROM LOCATION DELETE FROM[*] LOCATION WHERE ID_LOCATION = 5"
+Syntax error in SQL statement "SELECT * FROM LOCATION DELETE FROM[*] LOCATION WHERE ID_LOCATION = 5"; SQL statement:
+SELECT * FROM LOCATION DELETE FROM location WHERE id_location = 5 [42000-200]
+2020-12-29 21:18:55 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "LOCATRAVEL_ATTRACTION" nie istnieje
+Table "LOCATRAVEL_ATTRACTION" not found; SQL statement:
+DELETE FROM locaTRAVEL_ATTRACTION ion WHERE id_location = 5 [42102-200]
+2020-12-30 19:52:41 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "DELETE *[*] FROM TRAVEL_ATTRACTION WHERE ID_TRAVEL_ATTRACTION = 5"; oczekiwano "identifier"
+Syntax error in SQL statement "DELETE *[*] FROM TRAVEL_ATTRACTION WHERE ID_TRAVEL_ATTRACTION = 5"; expected "identifier"; SQL statement:
+DELETE * FROM TRAVEL_ATTRACTION WHERE id_travel_attraction = 5 [42001-200]
+2020-12-30 19:53:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "DELETE *[*] FROM TRAVEL_ATTRACTION WHERE ID_TRAVEL_ATTRACTION  = 5"; oczekiwano "identifier"
+Syntax error in SQL statement "DELETE *[*] FROM TRAVEL_ATTRACTION WHERE ID_TRAVEL_ATTRACTION  = 5"; expected "identifier"; SQL statement:
+DELETE * FROM TRAVEL_ATTRACTION WHERE ID_TRAVEL_ATTRACTION  = 5 [42001-200]
+2020-12-30 19:53:48 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "DELETE *[*] FROM TRAVEL_ATTRACTION WHERE ID_TRAVEL_ATTRACTION  = 2"; oczekiwano "identifier"
+Syntax error in SQL statement "DELETE *[*] FROM TRAVEL_ATTRACTION WHERE ID_TRAVEL_ATTRACTION  = 2"; expected "identifier"; SQL statement:
+DELETE * FROM TRAVEL_ATTRACTION WHERE ID_TRAVEL_ATTRACTION  = 2 [42001-200]

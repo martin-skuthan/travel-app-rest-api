@@ -2,8 +2,8 @@ package pl.java.travelapp.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import pl.java.travelapp.model.TravelAttraction;
+import pl.java.travelapp.model.Location;
 
 @Repository
-public interface TravelAttractionRepository extends JpaRepository<TravelAttraction, Long> {
+public interface LocationRepository extends JpaRepository<Location, Long> {
 }
