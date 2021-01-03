@@ -6,6 +6,7 @@ import pl.java.travelapp.dao.LocationRepository;
 import pl.java.travelapp.dao.TravelAttractionRepository;
 import pl.java.travelapp.model.Location;
 import pl.java.travelapp.model.TravelAttraction;
+import pl.java.travelapp.model.enums.AttractionType;
 
 import java.util.List;
 import java.util.Optional;
@@ -36,6 +37,7 @@ public class TravelAttractionService {
                 travelAttraction.setLocation(locationRepository.findById(travelAttraction.getLocation().getId()).get());
             }
         }
+        travelAttraction.setType(AttractionType.valueOf(travelAttraction.getAttractionTypeString()));
         return repository.save(travelAttraction);
     }
 

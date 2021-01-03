@@ -38,3 +38,7 @@ DELETE * FROM TRAVEL_ATTRACTION WHERE ID_TRAVEL_ATTRACTION  = 5 [42001-200]
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "DELETE *[*] FROM TRAVEL_ATTRACTION WHERE ID_TRAVEL_ATTRACTION  = 2"; oczekiwano "identifier"
 Syntax error in SQL statement "DELETE *[*] FROM TRAVEL_ATTRACTION WHERE ID_TRAVEL_ATTRACTION  = 2"; expected "identifier"; SQL statement:
 DELETE * FROM TRAVEL_ATTRACTION WHERE ID_TRAVEL_ATTRACTION  = 2 [42001-200]
+2021-01-03 22:17:56 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "TYPE[*]"; oczekiwano "TRUNCATE"
+Syntax error in SQL statement "TYPE[*]"; expected "TRUNCATE"; SQL statement:
+TYPE [42001-200]
