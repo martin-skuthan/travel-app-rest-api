@@ -1,5 +1,6 @@
 package pl.java.travelapp.api;
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -29,11 +30,13 @@ public class TravelAttractionApi {
     }
 
     @GetMapping
+    @ApiOperation(value = "Get all travel attractions", notes = "Method returns all recors from database")
     public List<TravelAttraction> getAll() {
         return service.readAll();
     }
 
     @GetMapping(path = "/{id}")
+    @ApiOperation(value = "Get travel attraction", notes = "Method returns one record according to provided id")
     public ResponseEntity<TravelAttraction> getById(@PathVariable Long id) {
         if (service.readById(id).isPresent()) {
             return new ResponseEntity(service.readById(id), HttpStatus.OK);
@@ -43,6 +46,7 @@ public class TravelAttractionApi {
     }
 
     @PostMapping
+    @ApiOperation(value = "Add travel attraction", notes = "Method adds new record to database")
     public TravelAttraction addTravelAttraction(@Valid @RequestBody TravelAttraction travelAttraction) throws ValidationException {
         return service.createTravelAttraction(travelAttraction);
     }
@@ -57,6 +61,7 @@ public class TravelAttractionApi {
     }
 
     @PutMapping
+    @ApiOperation(value = "Update travel attraction", notes = "Method updates existed record with id provided by user")
     public TravelAttraction updateTravelAttraction(@RequestBody TravelAttraction travelAttraction) throws ValidationException {
         if (travelAttraction.getId() == null) {
             throw new ValidationException("Id hasn't been provided");
@@ -76,6 +81,7 @@ public class TravelAttractionApi {
     }
 
     @DeleteMapping(path = "/{id}")
+    @ApiOperation(value = "Delete travel attraction", notes = "Method deletes one record according to provided id")
     public ResponseEntity deleteTravelAttraction(@PathVariable Long id) {
         if (service.readById(id).isPresent()) {
             service.deleteTravelAttraction(id);

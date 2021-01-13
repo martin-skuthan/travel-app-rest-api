@@ -25,6 +25,7 @@ public class TravelAttraction {
     @Transient
     @ValueOfEnum(enumClass = AttractionType.class)
     private String attractionTypeString;
+    @JsonIgnore
     private AttractionType type;
     @Max(5)
     private double stars;
