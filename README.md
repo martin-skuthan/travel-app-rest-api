@@ -9,8 +9,8 @@ REST API application which allows users to manage travel attraction records.
 * [Contact](#contact)
 
 ## General info
-Travel Attraction REST API is an application written in Java programming language, based on HTTP protocol and JSON format. It cooperates with H2 database and permits users to add/remove/update/get travel attraction records.
-Application has been created for educational purpose, in order to develop my porgramming skills.
+Travel Attraction REST API is an application written in Java programming language, it uses HTTP protocol and JSON format. It cooperates with H2 database and permits users to add/remove/update/get travel attraction records.
+The application has been created for educational purpose, in order to develop my programming skills.
 
 
 ## Technologies
@@ -23,24 +23,24 @@ Application has been created for educational purpose, in order to develop my por
 * Swagger 2
 
 ## Features
-* **Getting travel attracions(GET method)** - Application allows users to get list of all records from database in JSON format.
+* **Getting list of travel attractions((GET method)** - Application allows users to get list of all records from database in JSON format.
 
   * Instruction:<br>
   **Endpoint:** http://localhost:8080/api/attractions <br>
     In order to get list of all record please send GET request to above endpoint<br>
     
-* **Getting travel attracion(GET method)** - Application allows users to get one specific record in JSON format, according to provided id.
+* **Getting travel attraction(GET method)** - Application allows users to get one specific record in JSON format, according to provided id.
 
   * Instruction:<br>
   **Endpoint:** http://localhost:8080/api/attractions/id <br>
     In order to get record according to provided id, please send GET request to above endpoint and provide id.<br>
-    Example : To get record with id = 2, send GET request under follwing endpoint: http://localhost:8080/api/attractions/2    
+    Example : To get record with id = 2, send GET request under following endpoint: http://localhost:8080/api/attractions/2    
     
 * **Adding new travel attraction(POST method)** - Application allows users to add new record to database.
 
   * Instruction:<br>
   **Endpoint:** http://localhost:8080/api/attractions <br>
-    In order to add new travel attraction record to database please send POST request to above andpoint with JSON parameter in following format:
+    In order to add new travel attraction record to database please send POST request to above endpoint with JSON parameter in following format:
     
     ```json
     {
@@ -61,7 +61,7 @@ Application has been created for educational purpose, in order to develop my por
     -type of travel attraction is an enum value and must complies with one of the following : CASTLE/NATIONAL_PARK(so far).<br>
     -max. no. of stars is 5.
                                                              
-* **Updating travel attraction(PUT method)** - Application allows users to update record from databae according to provided id.
+* **Updating travel attraction(PUT method)** - Application allows users to update record from database according to provided id.
   
   * Instruction:<br>
   **Endpoint:** http://localhost:8080/api/attractions/id <br>
@@ -83,28 +83,28 @@ Application has been created for educational purpose, in order to develop my por
     }
     ```
     
-    Example : To update record with id = 2, send PUT request under follwing endpoint: http://localhost:8080/api/attractions/2 
+    Example : To update record with id = 2, send PUT request under following endpoint: http://localhost:8080/api/attractions/2 
     
 
-* **Removing travel attraction(DELETE method)** - Application allows users to remove record from database accoording to provided id.
+* **Removing travel attraction(DELETE method)** - Application allows users to remove record from database according to provided id.
 
   * Instruction:<br>
   **Endpoint:** http://localhost:8080/api/attractions/id <br>
-    In order to delete travel attraction record please send DELETE request to above endpoint and provide id.
-    Example : To delete record with id = 2, send DELETE request under follwing endpoint: http://localhost:8080/api/attractions/2  
+    In order to delete travel attraction record please send DELETE request to above endpoint and provide id.<br>
+    Example : To delete record with id = 2, send DELETE request under following endpoint: http://localhost:8080/api/attractions/2  
     
-* **Data validation** - In application has been implemented validation system based on Hibernate Validator and @ExcpetionHandler. In case of some issue, it returns appropriate http response status code and JSON message indicating what went wrong. Validation system prevents from:
+* **Data validation** - In application has been implemented validation system based on Hibernate Validator and @ExcpetionHandler. In case of some issues, it returns an appropriate http response status code and JSON message indicating what went wrong. Validation system prevents from:
   * Getting travel attraction with wrong id 
   * Adding empty travel attraction to database
   * Updating travel attraction with wrong id 
   * Removing travel attraction with wrong id 
 
 ## Documentation 
-Documentation in Travel Attraction REST API is generated by Swagger 2.<br>
-In order to access JSON documentation please access folowing endpoint: http://localhost:8080/v2/api-docs <br>
-In order to access documentation with graphic user interface and test my application please access following endpoint: http://localhost:8080/swagger-ui.html <br>
+Documentation for Travel Attraction REST API is generated by Swagger 2.<br>
+In order to access JSON documentation please access following endpoint: http://localhost:8080/v2/api-docs <br>
+In order to access documentation with graphic user interface and test my application please access following  endpoint: http://localhost:8080/swagger-ui.html <br>
   
 ## Contact
 Created by : Martin Skuthan. Please feel free to contact me :
 * By mail: martin.skuthan95@gmail.com
-* Linkedin : www.linkedin.com/in/martin-skuthan-630553190
+* LinkedIn : www.linkedin.com/in/martin-skuthan-630553190
