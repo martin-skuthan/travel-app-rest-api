@@ -22,7 +22,7 @@ Application has been created for educational purpose, in order to develop my por
 * Swagger
 
 ## Features
-* **Getting travel attracions(GET method)** - Application allows users to get list of all records from database, or one specific record according to provided id.
+* **Getting travel attracions(GET method)** - Application allows users to get list of all records from database, or one specific record according to provided id in JSON format.
 
   * Instruction:<br>
   **Endpoint:** http://localhost:8080/api/attractions <br>
@@ -38,15 +38,23 @@ Application has been created for educational purpose, in order to develop my por
     
     ```json
     {
-      "name" : "ffsef",
-      "description" : "fwfeF",
+      "name" : "name of travel attraction",
+      "description" : "description of travel attraction",
+      "location" : {
+          "city" : "city of travel attraction",
+          "street" : "street of travel attraction",
+          "country" : "country of travel attraction",
+          "postalCode" : "postal code of travel attraction"
+      },
+      "attractionTypeString" : "type of travel attraction",
+      "stars" : 5
     }
     ```
     
-  
-
-
-                                                            
+    Please be informed that:<br>
+    - type of travel attraction is an enum value and must complies with one of the following : CASTLE/NATIONAL_PARK(so far).<br>
+    - max. no. of stars is 5.
+                                                             
 * **Updating travel attraction(PUT method)** - Application allows users to update record from databae according to provided id.
   
   * Instruction:<br>
