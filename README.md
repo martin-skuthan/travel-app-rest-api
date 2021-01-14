@@ -26,19 +26,38 @@ Application has been created for educational purpose, in order to develop my por
 
   * Instruction:<br>
   **Endpoint:** http://localhost:8080/api/attractions <br>
-    *   Get list of all records: In order to get list of all record please send GET request under above endpoint<br>
-    *   Get one record accorgind to provided id: In order to get record according to provided id, please send GET request under above endpoint and provide id.<br>
+    *   Get list of all records: In order to get list of all record please send GET request to above endpoint<br>
+    *   Get one record accorgind to provided id: In order to get record according to provided id, please send GET request to above endpoint and provide id.<br>
     Example : To get record with id = 2, send GET requste under follwing endpoint: http://localhost:8080/api/attractions/2
     
 * **Adding new travel attraction(POST method)** - Application allows users to add new record to database.
 
+  * Instruction:<br>
+  **Endpoint:** http://localhost:8080/api/attractions <br>
+    In order to add new travel attraction record to database please send POST request to above andpoint with JSON parameter in following format:
+    
+    ```json
+    {
+      "name" : "ffsef",
+      "description" : "fwfeF",
+    }
+    ```
+    
+  
+
 
                                                             
 * **Updating travel attraction(PUT method)** - Application allows users to update record from databae according to provided id.
+  
+  * Instruction:<br>
+  **Endpoint:** http://localhost:8080/api/attractions <br>
 
 
 
 * **Removing travel attraction(DELETE method)** - Application allows users to remove record from database accoording to provided id.
+
+  * Instruction:<br>
+  **Endpoint:** http://localhost:8080/api/attractions <br>
 
 
 
