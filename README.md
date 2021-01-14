@@ -22,13 +22,18 @@ Application has been created for educational purpose, in order to develop my por
 * Swagger
 
 ## Features
-* **Getting travel attracions(GET method)** - Application allows users to get list of all records from database, or one specific record according to provided id in JSON format.
+* **Getting travel attracions(GET method)** - Application allows users to get list of all records from database in JSON format.
 
   * Instruction:<br>
   **Endpoint:** http://localhost:8080/api/attractions <br>
-    *   Get list of all records: In order to get list of all record please send GET request to above endpoint<br>
-    *   Get one record accorgind to provided id: In order to get record according to provided id, please send GET request to above endpoint and provide id.<br>
-    Example : To get record with id = 2, send GET requste under follwing endpoint: http://localhost:8080/api/attractions/2
+    In order to get list of all record please send GET request to above endpoint<br>
+    
+* **Getting travel attracion(GET method)** - Application allows users to get one specific record in JSON format, according to provided id.
+
+  * Instruction:<br>
+  **Endpoint:** http://localhost:8080/api/attractions/id <br>
+    In order to get record according to provided id, please send GET request to above endpoint and provide id.<br>
+    Example : To get record with id = 2, send GET requste under follwing endpoint: http://localhost:8080/api/attractions/2    
     
 * **Adding new travel attraction(POST method)** - Application allows users to add new record to database.
 
@@ -51,9 +56,9 @@ Application has been created for educational purpose, in order to develop my por
     }
     ```
     
-    Please be informed that:<br>
-    - type of travel attraction is an enum value and must complies with one of the following : CASTLE/NATIONAL_PARK(so far).<br>
-    - max. no. of stars is 5.
+    Please be informed that:
+    -type of travel attraction is an enum value and must complies with one of the following : CASTLE/NATIONAL_PARK(so far).<br>
+    -max. no. of stars is 5.
                                                              
 * **Updating travel attraction(PUT method)** - Application allows users to update record from databae according to provided id.
   
