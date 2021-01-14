@@ -24,10 +24,10 @@ Application has been created for educational purpose, in order to develop my por
 ## Features
 * **Getting travel attracions(GET method)** - Application allows users to get list of all records from database, or one specific record according to provided id.
 
-  *Instruction:
-  **Endpoint:**
-    *Get list of all records:
-    *Get one record accorginf to provided id:
+  * Instruction:
+  **Endpoint:**<br>
+    *   Get list of all records:<br>
+    *   Get one record accorginf to provided id:
 
 * **Adding new travel attraction(POST method)** - Application allows users to add new record to database.
 
