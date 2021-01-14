@@ -25,10 +25,10 @@ Application has been created for educational purpose, in order to develop my por
 * **Getting travel attracions(GET method)** - Application allows users to get list of all records from database, or one specific record according to provided id.
 
   * Instruction:<br>
-  **Endpoint: ** http://localhost:8080/api/attractions <br>
+  **Endpoint:** http://localhost:8080/api/attractions <br>
     *   Get list of all records: In order to get list of all record please send GET request under above endpoint<br>
     *   Get one record accorgind to provided id: In order to get record according to provided id, please send GET request under above endpoint and provide id.<br>
-    Example : To get record with id = 2, send GET requste under follwing endpoint: 
+    Example : To get record with id = 2, send GET requste under follwing endpoint: http://localhost:8080/api/attractions/2
     
 * **Adding new travel attraction(POST method)** - Application allows users to add new record to database.
 
